@@ -223,3 +223,94 @@ footer {
 
 
 
+/* Adicione estas regras de mídia ao seu arquivo de estilo CSS */
+
+/* Tablets e dispositivos maiores */
+@media (max-width: 991px) {
+    .col-sm-6.espaco {
+        width: 46vw;
+    }
+}
+
+/* Smartphones e dispositivos menores */
+@media (max-width: 767px) {
+    .col-sm-6.espaco {
+        width: 90vw;
+        margin: 0 auto;
+    }
+    
+    .navbar-brand.espaco {
+        font-size: 2rem;
+    }
+    
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .nav-item {
+        margin-bottom: 10px;
+    }
+    
+    .nav-link.about {
+        padding-right: 0 !important;
+    }
+    
+    .estrela {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Smartphones em orientação paisagem e dispositivos menores */
+@media (max-width: 575px) {
+    .col-sm-6.espaco {
+        width: 100vw;
+        margin: 0 auto;
+    }
+    
+    .navbar-brand.espaco {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* Adicione estas regras de mídia ao seu arquivo de estilo CSS */
+
+/* Smartphones e dispositivos menores (até 767px de largura) */
+@media (max-width: 767px) {
+    .col-sm-4 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .fotoDavi {
+        width: 100%;
+        height: 300px; /* ou ajuste conforme necessário */
+        background-size: cover;
+    }
+}
+
+/* Tablets e dispositivos maiores (de 768px a 991px de largura) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-sm-4 {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Smartphones em orientação paisagem e tablets maiores (de 768px a 991px de largura) */
+@media (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
+    .col-sm-4 {
+        width: 33.33%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Tablets em orientação paisagem e dispositivos maiores (a partir de 992px de largura) */
+@media (min-width: 992px) and (orientation: landscape) {
+    .col-sm-4 {
+        width: 25%;
+        margin-bottom: 20px;
+    }
+}
