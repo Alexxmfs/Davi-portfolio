@@ -35,9 +35,27 @@ body.loaded {
     font-size: 2.5rem;
 }
 
+.container-logo {
+    display: flex; /* Usa flexbox para alinhar os itens horizontalmente */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    padding-left: 5px; /* Adiciona espaçamento à esquerda */
+    padding-top: 5px; /* Adiciona espaçamento ao topo */
+}
 
+.estrela {
+    margin-right: 10px; /* Adiciona uma margem à direita da imagem */
+    width: 50px;
+    height: 50px;
+}
 
+.navbar-brand {
+    margin-bottom: 0; /* Remove a margem inferior do texto */
+}
 
+.about{
+    font-size: 2rem;
+    margin-right: 300px;
+}
 
 @media (min-width: 768px) {
     .col-sm-6.espaco {
