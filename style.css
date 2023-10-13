@@ -53,8 +53,10 @@ body.loaded {
 }
 
 .about{
-    font-size: 2rem;
-    margin-right: 300px;
+    font-size: 2rem !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    padding-right: 580px !important;
 }
 
 footer {
