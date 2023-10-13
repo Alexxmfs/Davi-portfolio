@@ -96,7 +96,7 @@ footer {
 @media (min-width: 768px) {
     .col-sm-6.espaco {
         border-radius: 10px;
-        width: 38vw; /* Ajuste a largura da coluna conforme necessário para deixá-las mais próximas */
+        width: 36vw; /* Ajuste a largura da coluna conforme necessário para deixá-las mais próximas */
         margin: 0 1vw; /* Ajuste a margem entre as colunas conforme necessário */
     }
 }
