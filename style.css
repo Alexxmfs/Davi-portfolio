@@ -3,10 +3,16 @@
     margin: 0 auto;
 }
 
+@font-face{
+    font-family: minhaFonte;
+    src: url(./fonts/PPAgrandir GrandRegular.ttf)
+}
+
 body {
     opacity: 0; /* Configura a opacidade do corpo da página para 0 por padrão */
     transition: opacity 1s ease-in-out; /* Adiciona uma transição suave para a propriedade de opacidade */
-    background: linear-gradient(to bottom right, #E0E0E0); /
+    background: linear-gradient(to bottom right, #E0E0E0); 
+    font-family: minhaFonte;
 }
 
 body.loaded {
