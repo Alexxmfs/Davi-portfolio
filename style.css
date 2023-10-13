@@ -18,7 +18,7 @@
 body {
     opacity: 0; /* Configura a opacidade do corpo da página para 0 por padrão */
     transition: opacity 1s ease-in-out; /* Adiciona uma transição suave para a propriedade de opacidade */
-    background: linear-gradient(to bottom right, #E0E0E0); 
+    background: linear-gradient(to bottom right, #F2F1F3); 
     font-family: minhaFonte;
 }
 
@@ -60,6 +60,15 @@ body.loaded {
     height: 50px;
 }
 
+.container-about{
+    padding-top: 40px;
+}
+
+.desc-about{
+    max-width: 100%;
+    width: 100%;
+}
+
 .navbar-brand {
     margin-bottom: 0;
 }
@@ -82,8 +91,112 @@ body.loaded {
     padding: 8px;
 }
 
+.desc-about{
+    padding-bottom: 8px;
+}
+
+.botao-sobre {
+    background-color: #F2F1F3;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: #000;
+    font-weight: 600;
+    transition: all 0.3s ease; /* Adiciona uma transição suave para as propriedades alteradas */
+}
+
+.botao-sobre:hover {
+    background-color: #000;
+    color: #FFF;
+}
+
+.fotoDavi {
+    background: url(./img/davi-perfil.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
+    order: 1;
+    justify-self: center;
+    width: 900px;
+    height: 900px;
+    animation: profile__animate 8s ease-in-out infinite 1s;
+}
+
+@keyframes profile__animate {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
+.fotoDavi {
+    width: 400px;
+    height: 400px;
+    box-shadow: inset 0 0 0 8px rgb(255 255 255 / 30%);
+}
+
+@media screen and (max-width: 768px) {
+    .fotoDavi{
+        order: initial;
+        justify-self: initial; 
+    },
+    .fotoDavi {
+        box-shadow: inset 0 0 0 6px rgb(255 255 255 / 30%);
+        width: 500px;
+        height: 500px;
+    }
+}
+
+.rodape-col{
+    padding-top: 20px;
+    padding-left: 130px;
+}
+
+.rodape-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    border: 2px solid #aaa9ab; /* Define a largura e a cor da borda */
+    color: #aaa9ab;
+    transition: all 0.5s ease;
+    text-decoration: none; /* Remove a sublinhado padrão dos links */
+}
+
+.rodape-col .social-links a:hover {
+    color: #FFF;
+    background-color: #000;
+    border-color: #FFF; /* Muda a cor da borda ao passar o mouse */
+}
+
+
+/* <!-- responsive --> */
+@media(max-width: 767px){
+	.rodape-col{
+		width: 50%;
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 574px){
+	.rodape-col{
+		width: 100%;
+	}
+}
+
+
+
 footer {
-    background-color: #f8f9fa;
+    background-color: #F2F1F3;
     padding: 20px 0;
     text-align: center;
     color: #333;
