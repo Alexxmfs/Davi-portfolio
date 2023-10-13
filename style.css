@@ -82,7 +82,6 @@ body.loaded {
     padding: 8px;
 }
 
-
 footer {
     background-color: #f8f9fa;
     padding: 20px 0;
@@ -96,8 +95,8 @@ footer {
 @media (min-width: 768px) {
     .col-sm-6.espaco {
         border-radius: 10px;
-        width: 36vw; /* Ajuste a largura da coluna conforme necessário para deixá-las mais próximas */
-        margin: 0 1vw; /* Ajuste a margem entre as colunas conforme necessário */
+        width: 39vw; 
+        margin: 0 auto; 
     }
 }
 
