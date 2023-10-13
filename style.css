@@ -3,6 +3,16 @@
     margin: 0 auto;
 }
 
+body {
+    opacity: 0; /* Configura a opacidade do corpo da página para 0 por padrão */
+    transition: opacity 1s ease-in-out; /* Adiciona uma transição suave para a propriedade de opacidade */
+    background: linear-gradient(to bottom right, #E0E0E0); /
+}
+
+body.loaded {
+    opacity: 1; 
+}
+
 .espaco{
     padding: 15px;
 }
@@ -11,8 +21,8 @@
     width: 100%;
     height: auto;
     max-width: 100%;
-    opacity: 1; /* Defina a opacidade inicial para 1 (totalmente visível) */
-    transition: opacity 0.3s ease; /* Adicione uma transição suave para a propriedade de opacidade com duração de 0.3 segundos e função de temporização 'ease' */
+    opacity: 1; 
+    transition: opacity 0.3s ease;
     border-radius: 10px;
 }
 
@@ -20,6 +30,14 @@
     opacity: 0.8; /* Defina a opacidade quando o mouse estiver sobre a imagem */
     border-radius: 10px;
 }
+
+.navbar-brand{
+    font-size: 2.5rem;
+}
+
+
+
+
 
 @media (min-width: 768px) {
     .col-sm-6.espaco {
@@ -29,13 +47,6 @@
     }
 }
 
-body {
-    opacity: 0; /* Configura a opacidade do corpo da página para 0 por padrão */
-    transition: opacity 1s ease-in-out; /* Adiciona uma transição suave para a propriedade de opacidade */
-}
 
-body.loaded {
-    opacity: 1; /* Quando a classe 'loaded' é adicionada ao corpo da página, a opacidade é definida como 1 */
-}
 
 
