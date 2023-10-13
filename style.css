@@ -8,6 +8,13 @@
     src: url(./fonts/PPAgrandir GrandRegular.ttf)
 }
 
+@font-face{
+    font-family: minhaFonteItalic;
+    src: url(./fonts/PPAgrandir GrandItalic.ttf);
+    font-weight: normal;
+    font-style: italic;
+}
+
 body {
     opacity: 0; /* Configura a opacidade do corpo da página para 0 por padrão */
     transition: opacity 1s ease-in-out; /* Adiciona uma transição suave para a propriedade de opacidade */
@@ -49,21 +56,32 @@ body.loaded {
 }
 
 .estrela {
-    margin-right: 10px; /* Adiciona uma margem à direita da imagem */
-    width: 50px;
+    margin-right: 10px; 
     height: 50px;
 }
 
 .navbar-brand {
-    margin-bottom: 0; /* Remove a margem inferior do texto */
+    margin-bottom: 0;
 }
 
-.about{
+.about {
     font-size: 2rem !important;
     margin: 0 auto !important;
     text-align: center !important;
     padding-right: 580px !important;
+    font-family: minhaFonteItalic !important;
+    font-style: italic;
 }
+
+.nav-link{
+    font-family: minhaFonteItalic !important;
+    font-style: italic;
+}
+
+.col-sm-6{
+    padding: 8px;
+}
+
 
 footer {
     background-color: #f8f9fa;
@@ -78,11 +96,17 @@ footer {
 @media (min-width: 768px) {
     .col-sm-6.espaco {
         border-radius: 10px;
-        width: 36vw; 
-        margin: 0 auto; 
+        width: 38vw; /* Ajuste a largura da coluna conforme necessário para deixá-las mais próximas */
+        margin: 0 1vw; /* Ajuste a margem entre as colunas conforme necessário */
     }
 }
 
+@media (max-width: 747px) {
+    .espaco img {
+        margin: 0;
+        padding: 5px; /* Padding de 5 pixels para telas menores que 747 pixels */
+    }
+}
 
 
 
