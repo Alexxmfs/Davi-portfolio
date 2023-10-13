@@ -57,6 +57,16 @@ body.loaded {
     margin-right: 300px;
 }
 
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+    color: #333;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
 @media (min-width: 768px) {
     .col-sm-6.espaco {
         border-radius: 10px;
